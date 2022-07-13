@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling.css">
+
+
+
+
+
+</head>
+
+<body style="background-color: rgb(223, 221, 221);">
+
+    <div class="navbar" style="position: relative;">
+
+        <p class="head" style=" float: left;"> JEPPIAAR <span style="font-size:60%;">ENGINEERING COLLEGE</span><span
+                style="font-size:60%;margin-left: 40px;">call:1234-5678</span><span
+                style="font-size:60%;margin-left: 20px;">Mail:jeppiaarclg@gmail.com</span></p>
+        <a href="login.php">Log-In</a>
+        <a href="signup.php">sign-in</a>
+
+        <a class="active" href="index.html">Home</a>
+
+
+    </div><br><br><br>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/mech dept.PNG" style="width:100%">
+            <div class="text">Mechanical</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/civil dept.PNG" style="width:100%">
+            <div class="text">Civil</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/aero dept.PNG" style="width:100%">
+            <div class="text">Aeronotical Department</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg></a>
+        <a class="next" onclick="plusSlides(1)"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+            </svg></a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">JEPPIAAR ENGINEERING COLLEGE</h3>
+                <P style="font-weight:600 ;margin-left:30px">"Under the aegis of our honorable Chairman, esteemed Col.
+                    Dr. Jeppiaar M.A., B.L., Ph.D . Jeppiaar
+                    Engineering College was inaugurated on 15th August 2001 as one of the prestigious institutions of
+                    Jeppiaar Educational Trust. Col. Dr. Jeppiaar is an industrialist, educationalist, and a
+                    philanthropist who works for the technical education for more than 3 decades. It is situated in
+                    Rajiv Gandhi salai, Old Mamallapuram road, next to Sathyabama University,Chennai."</P>
+            </td>
+            <td><img style="width:400px" class="index img" src="img/Jeppiaar-Engineering-College.jpg" alt="img"></td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td><img style="width:400px" class="index img" src="img/EEE.PNG" alt="img"></td>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">ELECTRONICS AND ELECTRICAL</h3>
+                <P style="font-weight:600 ;margin-left:30px">"The department of Electrical & Electronics established in
+                    the year 2001 with the undergraduate programme and it has well qualified, dedicated and experienced
+                    faculty who have been the driving force behind the rapid success of this department. The department
+                    lays stress on all round development of the students as well as faculty and laboratory staff by
+                    providing them conducive academic environment and necessary infrastructure for carrying out academic
+                    and research work."</P>
+            </td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">ELECTRONICS AND COMMUNICATION</h3>
+                <P style="font-weight:600 ;margin-left:30px">"The Department of Electronics and Communication
+                    Engineering was established in the year 2001 with the vision to become a centre of excellence to
+                    provide endowment education and produce innovative engineers to excel at international level. The
+                    Department Laboratories are fully air conditioned, well equipped with computer systems highly
+                    configured computational units. "</P>
+            </td>
+            <td><img style="width:400px" class="index img" src="img/ECE.PNG" alt="img"></td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td><img style="width:400px" class="index img" src="img/mech dept.PNG" alt="img"></td>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">MECHANICAL ENGINEERING</h3>
+                <P style="font-weight:600 ;margin-left:30px">"The Department of Mechanical Engineering from the day of
+                    its inception in the year 2002 has been taking long strides in the field of Science and Engineering.
+                    The objective of Mechanical Engineering Department is to provide high class education enabling the
+                    students to have the ability to design, plan, administer and manage the latest technologies in the
+                    field of mechanical engineering to face the future challenges"</P>
+            </td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">CIVIL ENGINEERING</h3>
+                <P style="font-weight:600 ;margin-left:30px">"The department took its establishment and initiation in
+                    the year 2009 to impart knowledge in ‘General Engineering Concepts’ and ‘Studies’ in ‘Civil
+                    Engineering’. The department has well equipped laboratory facilities and highly qualified faculty
+                    members having rich experience in teaching and industrial background. Beyond these basics, study of
+                    Engineering Mechanics, Fluid Mechanics, Strength of Materials, Solid Mechanics and Environmental
+                    Engineering Sciences."</P>
+            </td>
+            <td><img style="width:400px" class="index img" src="img/civil dept.PNG" alt="img"></td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td><img style="width:400px" class="index img" src="img/bio tech.PNG" alt="img"></td>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">BIO TECNOLOGY</h3>
+                <P style="font-weight:600 ;margin-left:30px">"Established during the year 2002 with B.Tech.
+                    Biotechnology programme (full time – 4 years) and during the year 2011 started M.Tech. Biotechnology
+                    programme (full time – 2 years). Both the programmes are affiliated to Anna University and
+                    accredited by AICTE. The infrastructure and expertise of the department is recognized and awarded by
+                    Anna University as the Centre for Research to further research and development"</P>
+            </td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;">
+        <tr>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">AERONOTICAL ENGINEERING</h3>
+                <P style="font-weight:600 ;margin-left:30px">"Since its inception in 2008, the Department of
+                    Aeronautical Engineering has over the years adapted and improved with the fast pace of technology. A
+                    sincere and hardworking student body with the wholehearted support of dedicated faculty have
+                    contributed in to the professional success enjoyed by the student’s who graduated from this
+                    department. "</P>
+            </td>
+            <td><img style="width:400px" class="index img" src="img/aero dept.PNG" alt="img"></td>
+        </tr>
+    </table>
+
+
+    <table style="margin-left:170px;margin-top: 90px;margin-right: 200px;margin-bottom: 100px;">
+        <tr>
+            <td><img style="width:400px" class="index img" src="img/csc dept.PNG" alt="img"></td>
+            <td class="table2">
+                <h3 style="text-align:center;font-weight:700">COMPUTER SCIENCE</h3>
+                <P style="font-weight:600 ;margin-left:30px">"The Department of Computer Science And Engineering
+                    established in the year of 2001 has a long record of academic excellence. The Department has been
+                    recognized as Research centre by Anna University in 2015. The Department is equipped with all
+                    requisite structure like D-Link certified Network lab with an excellent Internet facility of 45 MBPS
+                    Optical Fiber connectivity and state-of-art computing facilities and with “Microsoft Campus
+                    Agreement” which provides genuine Microsoft products to the students."</P>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+
+</html>
